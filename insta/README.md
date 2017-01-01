@@ -5,7 +5,7 @@ instagram's tool by golang
 ##Install insta
 	
 	cd $GOPATH/src
-	git clone github.com/gophper/tools
+	git clone https://github.com/nanjishidu/tools.git
 	cd  tools/insta
 	go build insta.go
 ##Cross Compiling
