@@ -1,21 +1,22 @@
-#insta
+# insta
 
 instagram's tool by golang
 
-##Install insta
+## Install insta
 	
 	cd $GOPATH/src
 	git clone https://github.com/nanjishidu/tools.git
 	cd  tools/insta
 	go build insta.go
-##Cross Compiling
+## Cross Compiling
+
 	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o insta_linux_amd64 insta.go 
 	CGO_ENABLED=0 GOOS=linux GOARCH=386 go build -o insta_linux_386 insta.go 
 	CGO_ENABLED=0 GOOS=linux GOARCH=arm go build -o insta_linux_arm insta.go
 	CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -o insta_win_amd64 insta.go 
 	CGO_ENABLED=0 GOOS=windows GOARCH=386 go build -o insta_win_386 insta.go 
 	CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build -o insta_mac_amd64 insta.go
-##Use insta
+## Use insta
 
 	./insta -h
 
