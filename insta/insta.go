@@ -174,9 +174,9 @@ func downLoadImg(imgUrl, dir, prefix string) error {
 	if imgUrl == "" {
 		return errors.New("ImgUrl Is Null")
 	}
-	filename := findStringSubmatch(imgUrl, `([0-9A-Za-z_.]*)\?`)
+	filename := findStringSubmatch(imgUrl, `\/([0-9A-Za-z_.]*)\.*$`)
 	if filename == "" {
-		return errors.New("From" + imgUrl + "To File Failed")
+		return errors.New("From " + imgUrl + " To File Failed")
 	}
 	if prefix != "" {
 		filename = prefix + filename
